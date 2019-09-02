@@ -7,7 +7,10 @@ class Person extends React.Component {
         const { person } = this.props
         return (
             <div>
-                <p>{person.name}</p>
+                <p>Player Name: {person.player}</p>
+                <p>Points: {person.points}</p>
+                <p>Games Played: {person.gamesPlayed}</p>
+                <p>Score Difference: {person.scoreDifference}</p>
             </div>
         )
     }
