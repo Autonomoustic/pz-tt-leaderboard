@@ -31,7 +31,7 @@ class Table extends React.Component {
             <div>
                 <Header />
                 <table className='Table'>
-                    <thead>
+                    <thead className='TableHeader'>
                     <tr>
                         <th className='HeaderName'>Player Name</th>
                         <th>Games Played</th>

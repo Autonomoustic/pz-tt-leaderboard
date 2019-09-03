@@ -8,7 +8,16 @@
     font-size: 1.2rem;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     border: 1px solid black;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
+}
+
+.Table tr:nth-child(even){background-color: #f2f2f2;}
+
+.Table tr:hover {background-color: #ddd;}
+
+.TableHeader {
+    background-color: #0e9871;
+    color: white;
 }
 
 .HeaderName {
