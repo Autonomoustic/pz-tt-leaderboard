@@ -1,0 +1,10 @@
+.Table {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    overflow: scroll;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
