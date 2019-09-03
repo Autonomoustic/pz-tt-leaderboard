@@ -1,6 +1,7 @@
 import React from 'react';
 import Person from '../../components/person/person';
 import "./Table.css";
+import Header from '../../components/header/header';
 
 class Table extends React.Component {
     state = {
@@ -28,14 +29,19 @@ class Table extends React.Component {
         }) : <p>Please add some people!</p>
         return (
             <div>
+                <Header />
                 <table className='Table'>
+                    <thead>
                     <tr>
                         <th className='HeaderName'>Player Name</th>
                         <th>Games Played</th>
                         <th>Points</th>
                         <th>Score Difference</th>
                     </tr>
+                    </thead>
+                    <tbody>
                         {renderPeople}
+                    </tbody>
                 </table>
             </div>
         );
