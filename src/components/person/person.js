@@ -17,4 +17,4 @@ class Person extends React.Component {
     }
 }
 
-export default Person
+export default Person;
