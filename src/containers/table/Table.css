@@ -1,0 +1,29 @@
+.Table {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    overflow: scroll;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    border: 1px solid black;
+    /*border-radius: 10px;*/
+}
+
+.Table tr:nth-child(even){background-color: #f2f2f2;}
+
+.Table tr:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.TableHeader {
+    background-color: #0e9871;
+    color: white;
+}
+
+.HeaderName {
+    text-align: left;
+    padding-left: 10px;
+}

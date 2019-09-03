@@ -1,5 +1,7 @@
 import React from 'react';
-import Person from '../../components/person';
+import Person from '../../components/person/person';
+import "./Table.css";
+import Header from '../../components/header/header';
 
 class Table extends React.Component {
     state = {
@@ -24,10 +26,23 @@ class Table extends React.Component {
     render() {
         const renderPeople = this.state.people ? this.state.people.map((person, index) => {
                 return <Person key={index} person={person}/>
-            }) : null
+        }) : <p>Please add some people!</p>
         return (
             <div>
-                {renderPeople}
+                <Header />
+                <table className='Table'>
+                    <thead className='TableHeader'>
+                    <tr>
+                        <th className='HeaderName'>Player Name</th>
+                        <th>Games Played</th>
+                        <th>Points</th>
+                        <th>Score Difference</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        {renderPeople}
+                    </tbody>
+                </table>
             </div>
         );
     }
