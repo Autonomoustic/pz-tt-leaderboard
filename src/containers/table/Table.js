@@ -30,7 +30,7 @@ class Table extends React.Component {
             <div>
                 <table className='Table'>
                     <tr>
-                        <th>Player Name</th>
+                        <th className='HeaderName'>Player Name</th>
                         <th>Games Played</th>
                         <th>Points</th>
                         <th>Score Difference</th>
